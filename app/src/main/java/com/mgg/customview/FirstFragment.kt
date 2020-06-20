@@ -32,5 +32,7 @@ class FirstFragment : Fragment() {
             val percent = (Math.random() * 99 + 1).toFloat()
             mCirclePercentView.setCurPercent(percent)
         }
+
+        cl_loding.start(8, 5000);
     }
 }
