@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MiClockView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="lightColor" format="color" />
+        <attr name="darkColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CirclePercentView" >
+        <attr name="circleBg" format="color"/>
+        <attr name="arcColor" format="color"/>
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="percentTextColor" format="color"/>
+        <attr name="percentTextSize" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="DashLineView">
+        <attr name="pt_backgroundColor" format="color"/>
+        <attr name="pt_strokeWidth" format="dimension"/>
+        <attr name="pt_dashWidth" format="dimension"/>
+        <attr name="pt_dashSpaceWidth" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CircleView">
+        <!--定义资源-->
+        <attr name="src" format="reference" />
+        <!--定义类型-->
+        <attr name="type" format="enum">
+            <!--圆形-->
+            <enum name="round" value="1" />
+            <!--矩形-->
+            <enum name="rect" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

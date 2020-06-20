@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#836FFF"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button_first"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="@string/next" />
+
+        <com.mgg.customview.view.MIClockView
+            android:layout_width="100dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints" />
+
+        <com.mgg.customview.view.CirclePercentView
+            android:id="@+id/mCirclePercentView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            app:arcColor="#ffee00"
+            app:arcWidth="10dp"
+            app:circleBg="#8e29fa"
+            app:percentTextColor="#ffee00"
+            app:percentTextSize="16sp"
+            app:radius="44dp" />
+
+        <com.mgg.customview.view.MiClockView2
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <com.mgg.customview.view.DrawBaseView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.mgg.customview.view.DashLineView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.mgg.customview.view.DrawTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <com.mgg.customview.view.DrawPathView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <com.mgg.customview.view.CircleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:src="@drawable/ic_launcher_background" />
+
+    <com.mgg.customview.view.CircleView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:src="@drawable/ic_launcher_background" />
+
+    <com.mgg.customview.view.CircleView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:src="@drawable/ic_launcher_background"
+        app:type="rect" />
+</LinearLayout>
